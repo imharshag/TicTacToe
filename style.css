@@ -22,6 +22,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
+  margin-bottom: 2rem; /* Ensure space below header */
 }
 
 @keyframes gradient {
@@ -41,6 +42,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4rem; 
 }
 
 .game {
@@ -107,8 +109,6 @@ body {
 .hide {
   display: none;
 }
-
-/* Existing CSS remains unchanged */
 
 footer {
   background-color: #1a1a1a;

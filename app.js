@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const gameDraw = () => {
-    msg.innerText = Game was a Draw.;
+    msg.innerText = `Game was a Draw.`;
     msgContainer.classList.remove("hide");
     disableBoxes();
   };
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const showWinner = (winner) => {
-    msg.innerText = Congratulations, Winner is ${winner};
+    msg.innerText = `Congratulations, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
     disableBoxes();
   };

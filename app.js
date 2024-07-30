@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     msg.innerText = `Game was a Draw.`;
     msgContainer.classList.remove("hide");
     disableBoxes();
+    document.querySelector(".board-container").classList.add("hide-board");
   };
 
   const disableBoxes = () => {

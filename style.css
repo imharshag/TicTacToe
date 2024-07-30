@@ -54,7 +54,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 .hide-board {
@@ -108,12 +107,22 @@ body {
   color: #333;
 }
 
-/* Mobile view adjustments */
 @media (max-width: 600px) {
   .header {
     padding: 1rem;
     font-size: 1.25rem;
     margin-bottom: 1rem;
+  }
+
+  .game {
+    height: 60vmin; 
+    width: 60vmin;  
+  }
+
+  .box {
+    height: 18vmin; 
+    width: 18vmin;  
+    font-size: 8vmin;
   }
 
   #reset-btn, #new-btn {
@@ -147,18 +156,17 @@ body {
 
 footer {
   background-color: #1a1a1a;
-  color: #00ffcc;
+  color: #f9f9f9;
   padding: 1rem;
   width: 100%;
   text-align: center;
   font-size: 0.9rem;
   margin-top: 2rem;
-  position: relative; /* Keep the footer in its natural flow */
-  bottom: 0;
+  position: relative;
 }
 
 footer a {
-  color: #00ffcc;
+  color: #efefef;
   text-decoration: none;
   font-weight: bold;
 }

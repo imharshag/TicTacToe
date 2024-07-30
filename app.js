@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let newGameBtn = document.querySelector("#new-btn");
   let msgContainer = document.querySelector(".msg-container");
   let msg = document.querySelector("#msg");
+  let gameContainer = document.querySelector(".container");
 
   let turnO = true; 
   let count = 0; 
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     count = 0;
     enableBoxes();
     msgContainer.classList.add("hide");
+    gameContainer.classList.remove("hide-board");
   };
 
   boxes.forEach((box, index) => {
@@ -53,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const gameDraw = () => {
     msg.innerText = `Game was a Draw.`;
     msgContainer.classList.remove("hide");
+    gameContainer.classList.add("hide-board");
     disableBoxes();
   };
 
@@ -72,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const showWinner = (winner) => {
     msg.innerText = `Congratulations, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
+    gameContainer.classList.add("hide-board");
     disableBoxes();
   };
 

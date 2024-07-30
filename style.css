@@ -13,11 +13,19 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.header {
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: #ffcc00;
+  text-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 15px #ff6600, 0 0 20px #ff3300, 0 0 25px #ff3300, 0 0 30px #ff3300;
+}
+
 .container {
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .game {

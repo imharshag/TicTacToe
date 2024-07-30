@@ -37,10 +37,10 @@ body {
 }
 
 .container {
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .game {
@@ -65,6 +65,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.box:hover {
+  background-color: #333;
+  transform: scale(1.05);
 }
 
 #reset-btn, #new-btn {
@@ -89,14 +96,73 @@ body {
 }
 
 .msg-container {
-  height: 100vmin;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .hide {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .game {
+    height: 50vmin;
+    width: 50vmin;
+  }
+
+  .box {
+    height: 15vmin;
+    width: 15vmin;
+    font-size: 6vmin;
+  }
+
+  #reset-btn, #new-btn {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  #msg {
+    font-size: 4vmin;
+  }
+
+  .msg-container {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.25rem;
+  }
+
+  .game {
+    height: 40vmin;
+    width: 40vmin;
+  }
+
+  .box {
+    height: 12vmin;
+    width: 12vmin;
+    font-size: 5vmin;
+  }
+
+  #reset-btn, #new-btn {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+
+  #msg {
+    font-size: 3.5vmin;
+  }
+
+  .msg-container {
+    gap: 0.75rem;
+  }
 }

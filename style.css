@@ -116,17 +116,6 @@ body {
     margin-bottom: 1rem;
   }
 
-  .game {
-    height: 45vmin;
-    width: 45vmin;
-  }
-
-  .box {
-    height: 14vmin;
-    width: 14vmin;
-    font-size: 6vmin;
-  }
-
   #reset-btn, #new-btn {
     padding: 0.5rem;
     font-size: 0.9rem;
@@ -164,6 +153,8 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   margin-top: 2rem;
+  position: relative; /* Keep the footer in its natural flow */
+  bottom: 0;
 }
 
 footer a {

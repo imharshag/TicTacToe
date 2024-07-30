@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     count = 0;
     enableBoxes();
     msgContainer.classList.add("hide");
+    document.querySelector(".board-container").classList.remove("hide-board");
   };
 
   boxes.forEach((box, index) => {
@@ -72,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const showWinner = (winner) => {
     msg.innerText = `Congratulations, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
+    document.querySelector(".board-container").classList.add("hide-board");
     disableBoxes();
   };
 

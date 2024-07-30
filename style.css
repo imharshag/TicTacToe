@@ -22,7 +22,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 2rem; /* Ensure space below header */
+  margin-bottom: 2rem;
 }
 
 @keyframes gradient {
@@ -43,6 +43,10 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem; 
+}
+
+.hide-board {
+  display: none;
 }
 
 .game {
@@ -92,6 +96,14 @@ body {
   color: #333;
 }
 
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+  #reset-btn, #new-btn {
+    padding: 0.75rem;
+    font-size: 1.25rem; /* Keep font size unchanged */
+  }
+}
+
 #msg {
   color: #00ffcc;
   font-size: 5vmin;
@@ -114,12 +126,10 @@ footer {
   background-color: #1a1a1a;
   color: #00ffcc;
   padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   text-align: center;
   font-size: 1rem;
+  margin-top: 2rem; 
 }
 
 footer a {

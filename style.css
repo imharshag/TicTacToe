@@ -154,7 +154,7 @@ body {
   display: none;
 }
 
-.dynamic-footer {
+footer {
   background-color: #1a1a1a;
   color: #f9f9f9;
   padding: 1rem;
@@ -162,14 +162,15 @@ body {
   text-align: center;
   font-size: 0.9rem;
   margin-top: 2rem;
+  position: relative;
 }
 
-.dynamic-footer a {
+footer a {
   color: #efefef;
   text-decoration: none;
   font-weight: bold;
 }
 
-.dynamic-footer a:hover {
+footer a:hover {
   text-decoration: underline;
 }
